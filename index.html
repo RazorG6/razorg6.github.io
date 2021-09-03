@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="notile">
+<head>
+<title>MyChart - Letters</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="/MyChart/favicon.ico" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/common.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/inside.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/menu.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/component.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/colors.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/themes.css?updateDt=1628402947" />
+<style type="text/css" id="initialBodyClass">html{background:none !important;} body{display:none !important;}</style>
+	<script type="text/javascript">
+		if (self === top) {
+			var InitialBodyClass = document.getElementById("initialBodyClass");
+			InitialBodyClass.parentNode.removeChild(InitialBodyClass);
+		} else { top.location = "/MyChart/Home/LogOut"; }
+	</script>
+<noscript><meta http-equiv="refresh" content="0;./nojs.asp" /></noscript>
+<script src="/MyChart/scripts/external/jquery-2.2.2.min.js?updateDt=1504904884" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/jqwrappers.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/external/handlebars.runtime.min.js?updateDt=1517453058" type="text/javascript"></script>
+<script src="/MyChart/scripts/ui_framework/core/common.min.js?updateDt=1626200372" type="text/javascript"></script>
+<script src="/MyChart/scripts/helpers/svg/loadsvgiconhelpers.min.js?updateDt=1579815862" type="text/javascript"></script>
+<script src="/MyChart/scripts/ui_framework/core/inside.min.js?updateDt=1590766566" type="text/javascript"></script>
+<script src="/MyChart/scripts/core/core.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/core/debug.min.js?updateDt=1579720612" type="text/javascript"></script>
+<script src="/MyChart/scripts/core/i18n.min.js?updateDt=1576194940" type="text/javascript"></script>
+<script src="/MyChart/localization/formats?updateDt=637424262" type="text/javascript"></script>
+<script src="/MyChart/scripts/wp.fdiutils.min.js?updateDt=349083492" type="text/javascript"></script>
+<script src="/MyChart/scripts/core/pagestartup.min.js?updateDt=1593208850" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/utilities.min.js?updateDt=1626200372" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/communityutilities.min.js?updateDt=1626200372" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/simpletemplates.min.js?updateDt=1576889434" type="text/javascript"></script>
+<script src="/MyChart/scripts/core/strings.min.js?updateDt=1566598368" type="text/javascript"></script>
+<script src="/MyChart/context/webserversettings?updateDt=1519579248" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/commonutils.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/mnemonics?updateDt=-1571657249" type="text/javascript"></script>
+<script src="/MyChart/scripts/ui_framework/core/formvalidation.min.js?updateDt=1592004762" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/intkeepalive.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.events.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/dateformat.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.comm.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.utils.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.telehealthutils.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/mychartjsstrings.min.js?updateDt=1630621672" type="text/javascript"></script>
+<script src="/MyChart/rulestring/strings?updateDt=920163096" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.dom.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.controls.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.controls.menu.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/effects.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.strings.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/jqueryextensions.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/handlebarshelpers.min.js?updateDt=1626200372" type="text/javascript"></script>
+<script src="/MyChart/scripts/utilities/behaviors.min.js?updateDt=1571718824" type="text/javascript"></script>
+<script src="/MyChart/templates/loggingout.tmpl.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/templates/buttonbar.tmpl.min.js?updateDt=1593569994" type="text/javascript"></script>
+<script src="/MyChart/templates/overlay.tmpl.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/templates/loading.tmpl.min.js?updateDt=1582324616" type="text/javascript"></script>
+<script src="/MyChart/templates/externaljump.tmpl.min.js?updateDt=1582324616" type="text/javascript"></script>
+<script src="/MyChart/templates/scrollbarwidth.tmpl.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/templates/externalorganizationdetails.tmpl.min.js?updateDt=1552544486" type="text/javascript"></script>
+<script src="/MyChart/templates/externalorganizationicon.tmpl.min.js?updateDt=1552544486" type="text/javascript"></script>
+<script src="/MyChart/templates/externalloadingindicator.tmpl.min.js?updateDt=1582794390" type="text/javascript"></script>
+<script src="/MyChart/templates/ui/ajaxspinner.tmpl.min.js?updateDt=1580424196" type="text/javascript"></script>
+<script src="/MyChart/templates/ui/zerostate.tmpl.min.js?updateDt=1589525484" type="text/javascript"></script>
+<script src="/MyChart/scripts/controllers/controller.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/component.min.js?updateDt=1571718824" type="text/javascript"></script>
+<script src="/MyChart/scripts/ui_framework/core/sidebarmanager.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/viewcomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/vb6component.min.js?updateDt=1579901254" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/templatecomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/inlineloadingcomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/inlineloadingwithsourcescomponent.min.js?updateDt=1546475642" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/externaljumppopupcomponent.min.js?updateDt=1626200372" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/confirmcomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/containercomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/positions.min.js?updateDt=1579815862" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/popup.min.js?updateDt=1589481060" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/panel.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/templates/calendar.tmpl.min.js?updateDt=1550877386" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/calendar.min.js?updateDt=1571718824" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/multimonthcalendar.min.js?updateDt=1550877386" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/calendars.css?updateDt=1628402947" />
+<script src="/MyChart/en-us/scripts/calendars.min.js?updateDt=1628402952" type="text/javascript"></script>
+<script src="/MyChart/en-us/scripts/wp.validators.min.js?updateDt=1628402953" type="text/javascript"></script>
+<script src="/MyChart/scripts/containers/htmltemplatecontainer.min.js?updateDt=1564444490" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/safetoredirectcomponent.min.js?updateDt=1589920268" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/timeoutwarningcomponent.min.js?updateDt=1594165186" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/loggingoutcomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/scripts/components/messagecomponent.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/areas/analytics/scripts/models/viewevent.min.js?updateDt=1589989446" type="text/javascript"></script>
+<script src="/MyChart/areas/analytics/scripts/controllers/usagetrackingcontroller.min.js?updateDt=1593711408" type="text/javascript"></script>
+<script src="/MyChart/scripts/controllers/ui/localeswitchercontroller.min.js?updateDt=1626200384" type="text/javascript"></script>
+<link type="text/css" rel="alternate stylesheet" media="All" href="/MyChart/en-us/styles/highcontrast.css?updateDt=1628402947" title="High Contrast" disabled="" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/proxyselect.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/proxyswitch_header.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/patienticon.css?updateDt=1628402947" />
+<script src="/MyChart/scripts/common/model.min.js?updateDt=1538609882" type="text/javascript"></script>
+<script src="/MyChart/scripts/common/modelcollection.min.js?updateDt=1552544486" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/controllers/menucontroller.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/scripts/controllers/proxyselectorcontroller.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/scripts/controllers/proxypopupmenucontroller.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/upload/scripts/controllers/uploadcontroller.min.js?updateDt=1581380412" type="text/javascript"></script>
+<script src="/MyChart/templates/header.tmpl.min.js?updateDt=1584593230" type="text/javascript"></script>
+<script src="/MyChart/templates/headershortcuts.tmpl.min.js?updateDt=1583709638" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/templates/menu.tmpl.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/templates/menusearch.tmpl.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/templates/dropdownproxyselector.tmpl.min.js?updateDt=1592511524" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/templates/patientroundicon.tmpl.min.js?updateDt=1579797178" type="text/javascript"></script>
+<script src="/MyChart/areas/upload/templates/uploadcontainer.tmpl.min.js?updateDt=1533196310" type="text/javascript"></script>
+<script src="/MyChart/areas/upload/templates/uploadcard.tmpl.min.js?updateDt=1554415520" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/menu.min.js?updateDt=1589138346" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/submenu.min.js?updateDt=1579815862" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/menuitem.min.js?updateDt=1589138346" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/searchmenu.min.js?updateDt=1589138346" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/searchsubmenu.min.js?updateDt=1579822852" type="text/javascript"></script>
+<script src="/MyChart/areas/navigation/scripts/models/searchmenuitem.min.js?updateDt=1626200398" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/scripts/models/proxyselectorviewmodel.min.js?updateDt=1589327344" type="text/javascript"></script>
+<script src="/MyChart/areas/proxyswitch/scripts/models/proxysubjectviewmodel.min.js?updateDt=1579809484" type="text/javascript"></script>
+<script src="/MyChart/areas/upload/scripts/models/uploadconfiguration.min.js?updateDt=1579828894" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/tables.css?updateDt=1628402947" />
+<script src="/MyChart/en-us/scripts/tables.min.js?updateDt=1628402952" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/messaging.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="All" href="/MyChart/en-us/styles/override.css?updateDt=1628402947" />
+<link type="text/css" rel="stylesheet" media="Print" href="/MyChart/en-us/styles/print.css?updateDt=1628402947" />
+<script type="text/javascript">
+$$WP.Strings.add("PopupHelpIconAlt", HTMLUnencode("See Instructions."), "Global");
+$$WP.Strings.add("PopupHelpIconAltFull", HTMLUnencode("See Instructions. Screen readers: use read next line command to hear instructions."), "Global");
+</script>
+</head>
+<body onload="insideBodyLoad(1140000, 1200000, true, 'MyChart - Letters', '');" class="hasNoCommunityLinks isInside color1 graphicHeader md_letters">
+<div id="wrap" class="withSidebar"><div class="printheader">Name: Kevin Garcia | DOB: 11/16/1990 | MRN: 5002186741 | PCP: Pcp None</div><div id="header" role="navigation" dir="ltr" lang="en" class="header_graphic"><div class="header_color"></div><div class="fitme width height"><div id="graphicHeader"></div></div></div><div id="content" class="fitme width"><div id="main" role="main" class="withSidebar"><a id="maintop" name="maintop"></a><div class="title"><h1 class="header">Letters<span class="subjectIndicator"></span></h1><div id="assistiveicons"><div class="assistiveicon"><script type="text/javascript">var printerfriendlyurl = HTMLUnencode("inside.asp?mode=letters&amp;printmode=true");</script>
+				<a id="printerfriendlylink" href="inside.asp?mode=letters&amp;printmode=true" target="_blank" onclick="window.open(printerfriendlyurl, 'WWW','width=1024,height=720,resizable,status,scrollbars').focus(); return false;"><img class="assistiveicon" src="/MyChart/en-US/Images/print.png" alt="Printer friendly page--New window will open" title="Printer friendly page" /></a></div></div></div>	
+	<div class="section" id="letterslist"><div class="content">			<table id="letterstable6" summary="Table of letters sent to you">
+				<colgroup><col/><col/><col/><col/></colgroup>
+				<thead><tr><th title="" scope="col" id="letterstable6_col0">Date</th><th title="" scope="col" id="letterstable6_col1">From</th><th title="" scope="col" id="letterstable6_col2">Reason</th><th title="" scope="col" id="letterstable6_col3">Status</th></tr></thead>
+				<tbody>
+				<tr class="odd" onclick="window.location.href='/MyChart/inside.asp?mode=letters&amp;id=1'">
+					<td headers="letterstable6_col0"><a href="/MyChart/inside.asp?mode=letters&amp;id=1" class="nolinelist" >07/02/2021</a></td>
+					<td headers="letterstable6_col1">Alex</td>
+					<td headers="letterstable6_col2">ED Excuse Letter</td>
+					<td headers="letterstable6_col3">Viewed</td>
+				</tr>
+</tbody></table></div></div>	
+<div class="back"><a class="button previousstep" title="Back" onclick="$$WP.Utilities.TryRedirect('/MyChart/inside.asp',null,'1'); return false;" href="/MyChart/inside.asp">Back to the home page</a></div></div><div id="sidebar"></div></div><div id="footer" class="fitme width" role="complementary"><div class="mainStyle"><div id="baselinks">	<a href="https://open.epic.com/Tutorial/PatientAuthentication?whereFrom=MyChart" onclick="$$WP.Utilities.TryRedirect('https://open.epic.com/Tutorial/PatientAuthentication?whereFrom=MyChart'); return false;">Interoperability Guide</a>	<a href="/MyChart/Authentication/TermsConditions/TermsStaticView" onclick="$$WP.Utilities.TryRedirect('/MyChart/Authentication/TermsConditions/TermsStaticView'); return false;">Terms &amp; Conditions</a>	<a href="/MyChart/inside.asp?mode=custsvc" onclick="$$WP.Utilities.TryRedirect('/MyChart/inside.asp?mode=custsvc'); return false;">Contact Us</a>	<a href="#" class="cssSwitcher" data-csstitle="Default" >Default Theme</a>	<a href="#" class="cssSwitcher" data-csstitle="High Contrast" >High Contrast Theme</a></div><span class="copyright"><a href="/MyChart/Home/Copyright" onclick="$$WP.Utilities.TryRedirect('/MyChart/Home/Copyright'); return false;"><span class="copystring">MyChart&reg; licensed from Epic Systems Corporation</span><span class="copyyear"> &copy; 1999 - 2020</span></a></span></div><div class="sidebarStyle"></div></div><div class="lb_overlay noprint" id="lightbox_overlay" onclick="hideLightbox();"></div>
+<div class="lb_content" id="lightbox"></div><div id="menuWrapper"></div></div></body></html>
