@@ -1,1 +1,0 @@
-$$WPUtil.guaranteeExistence($$WP,"Signup.Components");$$WP.Signup.Components.SignupPopupComponent=function WP$Signup$Components$SignupPopupComponent(a){this.Components$TemplateComponent(a);this.template=$$WP.Templates.Signup.SignupPopup};$$WP.Signup.Components.SignupPopupComponent.extend("Components.TemplateComponent")
