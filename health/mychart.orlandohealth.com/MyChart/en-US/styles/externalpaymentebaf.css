@@ -1,0 +1,54 @@
+﻿/* Copyright 2018 Epic Systems Corporation */
+#AddPmtMethodIFrame {
+  position: relative; }
+
+#iFrameLoadingIndicator {
+  height: 21rem; }
+  #iFrameLoadingIndicator > .v-center {
+    top: 10rem; }
+
+#extPmtPageFrame {
+  border-width: 0px;
+  height: 21rem;
+  overflow-y: hidden;
+  width: 100%; }
+
+#iFrameLoadingIndicator.mobileExtPmtPage, #extPmtPageFrame.mobileExtPmtPage {
+  height: 32rem; }
+
+@media only screen and (max-width: 768px) {
+  #iFrameLoadingIndicator, #extPmtPageFrame {
+    height: 32rem; } }
+
+/** workflow specific overrides **/
+/**** Bill Pay ****/
+@media only screen and (max-width: 768px) { }
+
+/**** Auto Pay ****/
+@media only screen and (max-width: 768px) { }
+
+/**** Pay as Guest ****/
+#guestPay-content #extPmtPageFrame, #guestPay-content #iFrameLoadingIndicator {
+  height: 14rem; }
+#guestPay-content #iFrameLoadingIndicator .v-center {
+  top: 5rem; }
+#guestPay-content #extPmtPageFrame.mobileExtPmtPage, #guestPay-content #iFrameLoadingIndicator.mobileExtPmtPage {
+  height: 24.5rem; }
+@media only screen and (max-width: 768px) {
+  #guestPay-content #extPmtPageFrame, #guestPay-content #iFrameLoadingIndicator {
+    height: 24.5rem; } }
+
+/**** Visit Payment ****/
+@media only screen and (max-width: 768px) { }
+
+/**** Rx Payment ****/
+@media only screen and (max-width: 768px) { }
+
+/**** E-Visit Payment ****/
+@media only screen and (max-width: 768px) { }
+
+/**** Premium Pay ****/
+@media only screen and (max-width: 768px) { }
+
+/**** Premium Auto Pay ****/
+@media only screen and (max-width: 768px) { }

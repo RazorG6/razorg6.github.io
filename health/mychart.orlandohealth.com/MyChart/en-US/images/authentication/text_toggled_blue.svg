@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path class="themed defaultFill-BrandTertiary" d="M7.07 44.23L10.18 34H7.71A3.71 3.71 0 0 1 4 30.29V7.71A3.71 3.71 0 0 1 7.71 4h32.58A3.71 3.71 0 0 1 44 7.71v22.58A3.71 3.71 0 0 1 40.29 34H20.54z" fill="#6b2b5e" />
+  <g fill="#fff">
+    <circle cx="15.85" cy="19.26" r="2.22" />
+    <circle cx="24" cy="19.26" r="2.22" />
+    <circle cx="32.15" cy="19.26" r="2.22" />
+  </g>
+</svg>
