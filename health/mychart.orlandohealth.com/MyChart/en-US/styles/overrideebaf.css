@@ -1,0 +1,18 @@
+﻿/*SLG #5189266 - Make hyperlink colors blue*/
+a, .linkcolor, .subtle.linkcolor {
+  color: #0044ff;}
+
+/*SLG #5446550/
+body #extPmtPageFrame {
+          height: 550px;
+}
+body #guestPay-content #extPmtPageFrame {
+height: 38rem;
+overflow-y: visible;
+}
+body #guestPay-content .formbuttons {
+margin-bottom: 5rem;
+}
+body .mobileExtPmtPage#extPmtPageFrame {
+height: 830px;
+}

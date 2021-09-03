@@ -1,0 +1,289 @@
+﻿/* Copyright 2018-2020 Epic Systems Corporation */
+/********************************
+General Page Styling
+*********************************/
+.noDisp, .mobile .md_echeckin form .section .noDisp {
+  display: none; }
+
+.pmtStep {
+  position: relative; }
+
+#paymentDetails .label {
+  display: inline-block; }
+
+#PaymentMethodEntryStepLoading {
+  min-height: 100px; }
+  #PaymentMethodEntryStepLoading .ajaxspinner .loadingmessage {
+    font-size: 0;
+    color: transparent; }
+
+.pmtLoadingOverlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .pmtLoadingOverlay > .spacer {
+    height: calc(50% - 32px); }
+
+/********************************
+* Saved payment method display
+*********************************/
+.sub_details {
+  display: block;
+  font-size: 85%; }
+  .sub_details .last_four {
+    display: block; }
+
+.option_image {
+  padding-right: 0.25rem;
+  float: right;
+  margin-top: -1.5rem; }
+  .option_image > img {
+    vertical-align: middle;
+    width: 3rem;
+    min-width: 3rem; }
+
+.option_details {
+  width: 100%;
+  padding-right: 1rem;
+  max-width: calc(100% - 5rem); }
+
+.flatlist.container .option_actions {
+  margin-top: 0.8rem;
+  display: block;
+  text-align: center; }
+  .flatlist.container .option_actions span {
+    vertical-align: super;
+    font-size: 0.9rem; }
+  .flatlist.container .option_actions .action_edit {
+    margin-right: 1.5rem; }
+    .flatlist.container .option_actions .action_edit img {
+      width: 20px;
+      vertical-align: top;
+      margin-top: -0.05rem; }
+  .flatlist.container .option_actions .action_delete {
+    color: #d80000; }
+    .flatlist.container .option_actions .action_delete.disabled {
+      color: #565656; }
+    .flatlist.container .option_actions .action_delete img {
+      width: 18px;
+      margin-right: 0.2rem; }
+
+#payment_method_container_Manual {
+  min-height: 3rem; }
+  #payment_method_container_Manual label {
+    margin-top: 0.5rem; }
+
+.mobile form .content .option_security_code_grouper, .option_security_code_grouper {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  display: inline-block;
+  margin-left: 1.7rem; }
+  .mobile form .content .option_security_code_grouper > label, .option_security_code_grouper > label {
+    padding-top: 0.5rem; }
+  .mobile form .content .option_security_code_grouper label + input[type='text'], .mobile form .content .option_security_code_grouper input, .option_security_code_grouper label + input[type='text'], .option_security_code_grouper input {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 0.75rem;
+    margin: 0.5rem 0 0 0.5rem;
+    width: 3rem;
+    padding: 0.1rem;
+    min-width: 0;
+    -moz-appearance: textfield; }
+    .mobile form .content .option_security_code_grouper label + input[type='text']::-webkit-outer-spin-button, .mobile form .content .option_security_code_grouper label + input[type='text']::-webkit-inner-spin-button, .mobile form .content .option_security_code_grouper input::-webkit-outer-spin-button, .mobile form .content .option_security_code_grouper input::-webkit-inner-spin-button, .option_security_code_grouper label + input[type='text']::-webkit-outer-spin-button, .option_security_code_grouper label + input[type='text']::-webkit-inner-spin-button, .option_security_code_grouper input::-webkit-outer-spin-button, .option_security_code_grouper input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+  .mobile form .content .option_security_code_grouper img, .option_security_code_grouper img {
+    width: 24px;
+    vertical-align: bottom;
+    margin-bottom: 0.1rem;
+    margin-left: 0.2rem; }
+
+label.prettylabel {
+  word-break: break-word; }
+
+.flatlistgrouper .flatlist.container label.flatlist, .flatradio.container input.flatradio + label.prettylabel {
+  width: 100%; }
+
+.payment_method_selector, .toggleLinkContainer {
+  max-width: 22rem; }
+
+p.toggleLinkContainer {
+  text-align: center;
+  margin-top: 0.5rem; }
+
+@media only screen and (max-width: 350px) {
+  .flatlist.container .option_actions span {
+    font-size: 0.75rem; } }
+
+/********************************
+Allowed payment methods
+*********************************/
+#pmtMethodsAccepted {
+  display: flex; }
+
+#pmtMethodsAcceptedText {
+  display: inline-block;
+  line-height: 1.5rem;
+  width: auto;
+  width: initial; }
+
+#pmtMethodsAcceptedIcons {
+  display: inline-block;
+  width: auto;
+  width: initial; }
+  #pmtMethodsAcceptedIcons > .allowedBrandsIcon {
+    height: 1.5rem; }
+
+@media only screen and (max-width: 768px) {
+  #pmtMethodsAccepted {
+    flex-direction: column; }
+  input.FieldInputBox:not(.fixed), select.FieldInputBox:not(.fixed) {
+    width: 100%;
+    margin: 0 0 0.5rem 0; }
+  input#CardEntry-CardNumber:not(.fixed) {
+    display: inline-block;
+    width: calc(100% - 50px); }
+  html:not(.mobile) input#CardEntry-RoutingNumber:not(.fixed), html:not(.mobile) input#CardEntry-AccountNumber:not(.fixed), html:not(.mobile) input#CardEntry-AccountNumberValidation:not(.fixed) {
+    display: inline-block;
+    width: calc(50% - 0.5rem);
+    min-width: 25%; }
+  html:not(.mobile) #CardEntry-BankAccountExtraField select:not(.fixed), html:not(.mobile) #CardEntry-BankAccountExtraField input:not(.fixed), html:not(.mobile) input#CardEntry-Nickname:not(.fixed) {
+    display: inline-block;
+    width: calc(100% - 1.75rem); } }
+
+@media only screen and (min-width: 769px) {
+  .mobile #CardEntryForm #CardEntry .FieldInputBox {
+    margin: 0;
+    max-width: 80%; }
+  .mobile #CardEntryForm .SmallInput .FieldInputBox {
+    max-width: 100%; }
+  .mobile #NicknameDiv .buttoncheck {
+    display: inline-block;
+    width: auto; }
+  .mobile #SavedPaymentMethods .card, .mobile .cardlist.selectable.selectionMade .card {
+    margin: 0.25rem; }
+  #CardEntry-BankAccountFirstName, #CardEntry-BankAccountLastName, #CardEntry-AccountNumber {
+    width: calc(100% - 0.5rem); }
+  #CardEntry-RoutingNumber, #CardEntry-AccountNumberValidation, #CardEntry-AccountState {
+    min-width: calc(50% - 0.5rem);
+    width: calc(50% - 0.5rem); } }
+
+/********************************
+ CardEntry - adding a new card to the list of saved cards
+*********************************/
+.SmallInput {
+  display: inline-block;
+  width: auto; }
+
+.CardImageAfterField {
+  display: inline-block;
+  width: auto;
+  margin-left: 0.25rem;
+  vertical-align: middle; }
+
+.FieldInputBox {
+  display: inline-block;
+  margin-top: 0.15rem; }
+
+.tbContainer {
+  margin-top: 0.15rem; }
+
+/********************************
+* Specific Field Formatting
+*********************************/
+#AddressEntryFields, #CardEntry-Column1, #CheckEntryFields {
+  margin-bottom: 0.5rem; }
+
+.mobile #NicknameDiv .button.buttoncheck {
+  margin-top: 0.5rem; }
+
+.ExpirationDate {
+  vertical-align: top; }
+
+#CardEntry-ExpMM {
+  width: 2.5rem;
+  text-align: center; }
+
+#CardEntry-ExpYYYY {
+  width: 60px;
+  padding-left: 5px;
+  margin-bottom: 0.5rem;
+  text-align: center; }
+
+#ExpirationSeparator {
+  line-height: 2.5rem; }
+
+#imgCheckExample {
+  margin-top: 20px;
+  max-width: 100%; }
+
+#Address_Manual {
+  min-height: 0; }
+
+#CardEntry-BrandImage {
+  width: 45px; }
+
+#CardEntry-Nickname {
+  margin-bottom: 2rem; }
+
+#CardEntry .CardEntryAddress {
+  min-height: 0rem;
+  margin: 0.25rem 0; }
+
+.CardEntryError {
+  margin-bottom: 1rem; }
+
+#CheckEntry {
+  margin: 0.75rem 0; }
+
+.mobile form .content label + input[type='text'].SecurityCode, input.SecurityCode {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+  min-width: 50px !important;
+  width: 50px; }
+
+.CardEntry-Field input.SecurityCode {
+  margin-left: 0; }
+
+#SubmitError + #AddCardSubmit {
+  margin-top: 1rem; }
+
+/********************************
+* Help Content
+*********************************/
+.cardlist.selectable.selectionMade .card.popupInstructions {
+  opacity: 1;
+  min-height: 0 !important; }
+
+.HelpImageAfterField {
+  margin-left: 4px; }
+
+#divPmtMethod {
+  overflow: visible; }
+
+.infoBubbleWrapper {
+  margin-top: -1rem; }
+
+/* #region Payment Information - Credit Card */
+.pmtSubLabel {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: -0.5rem; }
+
+.pmtSubSeparator {
+  display: inline;
+  line-height: 1.5rem;
+  position: relative;
+  top: 2.2rem; }
+
+@media screen and (max-width: 1300px) {
+  .CardButton, .card_actions_container.hover .CardButton, .card_actions_container.hover .CardButton.disabled {
+    opacity: 1; } }
+
+/* #endregion */
