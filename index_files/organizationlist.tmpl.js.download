@@ -1,0 +1,75 @@
+(function() {var template = Handlebars.template, templates = $$WP.Templates = $$WP.Templates || {};templates = templates.Community = templates.Community || {};templates['OrganizationList'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return container.escapeExpression((helpers.setStringNamespace || (depth0 && depth0.setStringNamespace) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.Shared",{"name":"setStringNamespace","hash":{},"data":data}))
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.organizationList : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
+    + container.escapeExpression(((helper = (helper = helpers.clearStringNamespace || (depth0 != null ? depth0.clearStringNamespace : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"clearStringNamespace","hash":{},"data":data}) : helper)));
+},"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = (helpers.ifEquals || (depth0 && depth0.ifEquals) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.inlineUpdate : depth0),1,{"name":"ifEquals","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
+    + "<div id=\"orgsLinked\" class=\"grid\">"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.organizationList : depth0),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>"
+    + ((stack1 = (helpers.ifEquals || (depth0 && depth0.ifEquals) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.inlineUpdate : depth0),1,{"name":"ifEquals","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"2":function(container,depth0,helpers,partials,data) {
+    return "<div>"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"UpdateFHIRDisclaimer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div>";
+},"4":function(container,depth0,helpers,partials,data) {
+    return "<h2 class=\"header\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Accounts",{"name":"getStringResource","hash":{},"data":data}))
+    + "</h2>";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "<div id=\"orgContainer_"
+    + container.escapeExpression(((helper = (helper = helpers.OrganizationId || (depth0 != null ? depth0.OrganizationId : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"OrganizationId","hash":{},"data":data}) : helper)))
+    + "\" class=\"centerAndFlex row formsection "
+    + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.IsLast : depth0),{"name":"unless","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\" data-id=\""
+    + container.escapeExpression(((helper = (helper = helpers.OrganizationId || (depth0 != null ? depth0.OrganizationId : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"OrganizationId","hash":{},"data":data}) : helper)))
+    + "\" >"
+    + container.escapeExpression((helpers.addTemplate || (depth0 && depth0.addTemplate) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.Organization",depth0,(data && data.root),{"name":"addTemplate","hash":{},"data":data}))
+    + "</div>";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "withSeparator";
+},"9":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = (helpers.ifEquals || (depth0 && depth0.ifEquals) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.showDisclaimer : depth0),1,{"name":"ifEquals","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"10":function(container,depth0,helpers,partials,data) {
+    return "<div><img src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/info.png",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\" class=\"infoIcon\" alt=\"\" />"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"AutoUpdateDisclaimer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div>";
+},"12":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class=\"center\"><div class=\"lg-only iconIntro\"><img src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/happy_together_alert.png",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\" alt=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"IntroImage",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" /></div><div class=\"sm-only iconIntro\"><img src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/wp_happy_together_intro_mo.png",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\" alt=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"IntroImage",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" /></div>"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.isProxyContext : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.program(18, data, 0),"data":data})) != null ? stack1 : "")
+    + "</div>";
+},"13":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.removeHyperlink : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.program(16, data, 0),"data":data})) != null ? stack1 : "");
+},"14":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.addStringResourceMnemonic || (depth0 && depth0.addStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@SUBJECTNAMENOLINKSNOHYPERLINK@",(depth0 != null ? depth0.subjectName : depth0),{"name":"addStringResourceMnemonic","hash":{},"data":data}))
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"NoLinkedOrgsProxyContextNoHyperlink",{"name":"getStringResource","hash":{},"data":data}))
+    + container.escapeExpression((helpers.removeStringResourceMnemonic || (depth0 && depth0.removeStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@SUBJECTNAMENOLINKSNOHYPERLINK@",{"name":"removeStringResourceMnemonic","hash":{},"data":data}));
+},"16":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.addStringResourceMnemonic || (depth0 && depth0.addStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@SUBJECTNAMENOLINKS@",(depth0 != null ? depth0.subjectName : depth0),{"name":"addStringResourceMnemonic","hash":{},"data":data}))
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"NoLinkedOrgsProxyContext",{"name":"getStringResource","hash":{},"data":data}))
+    + container.escapeExpression((helpers.removeStringResourceMnemonic || (depth0 && depth0.removeStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@SUBJECTNAMENOLINKS@",{"name":"removeStringResourceMnemonic","hash":{},"data":data}));
+},"18":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"NoLinkedOrgs",{"name":"getStringResource","hash":{},"data":data}));
+},"useData":true});})();

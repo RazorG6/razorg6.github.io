@@ -1,0 +1,64 @@
+(function() {var template = Handlebars.template, templates = $$WP.Templates = $$WP.Templates || {};templates = templates.Community = templates.Community || {};templates['FHIRUpdatePopup'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return " "
+    + container.escapeExpression((helpers.setStringNamespace || (depth0 && depth0.setStringNamespace) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.FHIRUpdate",{"name":"setStringNamespace","hash":{},"data":data}))
+    + "<div aria-live=\"assertive\"><div class=\"updateTitleContainer center\"><div id=\"loadingDisclaimer\" class=\"infoText bold\"><img src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/info_themed.svg",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\" class=\"infoIcon\" alt=\"\" />"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"LoadingDisclaimer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div><div id=\"updateLoadingTitle\" class=\"header large loadingTitle\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"LoadingTitle",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div><div id=\"updateCompleteTitle\" class=\"hidden header large completeTitle\" aria-live=\"polite\"><img src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/H2Gicons/successAnimation.gif",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\" class=\"completeAnimation\" alt=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CompleteAnimationAltText",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" />"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CompleteTitle",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div></div><br><div class=\"updateGrid grid\"><div class=\"row\"><div class=\"col-1 lg-only\"></div><div id=\"featuresLoading\" class=\"col-10\"><div class=\"featurescontainer\">"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.features : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div></div><div class=\"col-1 lg-only\"></div></div></div><br><div id=\"providerDisclaimer\" class=\"infoText center\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ProviderDisclaimer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div><div id=\"faqLink\" class=\"infoText center\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"FAQText",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div><div class=\"updateButtons buttonDiv right\"><input type=\"button\" id=\"updateAnotherOrg\" class=\"multi button sm-fullWidth newworkflow hidden\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"UpdateAnotherOrgButton",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" /><input type=\"button\" id=\"updateClose\" class=\"multi button sm-fullWidth otherbutton\" value=\""
+    + container.escapeExpression(((helper = (helper = helpers.CloseButtonText || (depth0 != null ? depth0.CloseButtonText : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"CloseButtonText","hash":{},"data":data}) : helper)))
+    + "\" /></div></div>"
+    + container.escapeExpression(((helper = (helper = helpers.clearStringNamespace || (depth0 != null ? depth0.clearStringNamespace : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"clearStringNamespace","hash":{},"data":data}) : helper)));
+},"1":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<div class=\"feature "
+    + container.escapeExpression(((helper = (helper = helpers.widthOverride || (depth0 != null ? depth0.widthOverride : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"widthOverride","hash":{},"data":data}) : helper)))
+    + "\"><div class=\"col-6 right\"><div class=\"activityicon left\"><img id=\"loading_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" alt=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"LoadingAltText",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" src=\""
+    + container.escapeExpression((helpers.makeStaticLink || (depth0 && depth0.makeStaticLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"images/spinner_small_transparentbg.gif",{"name":"makeStaticLink","hash":{},"data":data}))
+    + "\"><img id=\"finished_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" class=\"hidden\" alt=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CompleteAltText",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" aria-live=\"polite\" src=\""
+    + container.escapeExpression(((helper = (helper = helpers.iconUrl || (depth0 != null ? depth0.iconUrl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"iconUrl","hash":{},"data":data}) : helper)))
+    + "\"><span id=\"success_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" class=\"orglink fullyLinked hidden\"></span><span id=\"error_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" class=\"orglink error hidden\"></span></div></div><div class=\"activityiconcol col-6\"><span id=\"feature_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" class=\"helptext bold\">"
+    + container.escapeExpression(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"text","hash":{},"data":data}) : helper)))
+    + "</span><div class=\"messagedisplay hidden\" id=\"errorMessage_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\" aria-live=\"polite\" data-message-display-for=\"feature_"
+    + container.escapeExpression(((helper = (helper = helpers.featureValue || (depth0 != null ? depth0.featureValue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"featureValue","hash":{},"data":data}) : helper)))
+    + "\"><div class=\"alert validationmessage updateErrorMessage\"><span class=\"clearlabel\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ErrorLabel",{"name":"getStringResource","hash":{},"data":data}))
+    + "</span>"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ErrorLoading",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div></div></div></div>";
+},"useData":true});})();

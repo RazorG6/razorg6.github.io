@@ -1,0 +1,96 @@
+(function() {var template = Handlebars.template, templates = $$WP.Templates = $$WP.Templates || {};templates = templates.Community = templates.Community || {};templates['CommunityPopup'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return container.escapeExpression((helpers.setStringNamespace || (depth0 && depth0.setStringNamespace) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.Shared",{"name":"setStringNamespace","hash":{},"data":data}))
+    + container.escapeExpression((helpers.addStringResourceMnemonic || (depth0 && depth0.addStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.OrganizationName : stack1),{"name":"addStringResourceMnemonic","hash":{},"data":data}))
+    + "<div id=\"popupContent\"><div id=\"externalLoadingIndicator\" class=\"loadingContainer hidden\" tabindex=\"-1\"><div class=\"loadingExt loading externalLoadingIndicator\"><span class=\"lE-backorbit\"></span><span class=\"lE-moon\"></span><span class=\"lE-fullLogo\"></span><span class=\"lE-panhandleAndCheck\"></span></div><div id=\"externalLoadingText\" class=\" inlineloading withsources component notoolbar\"><span class=\"subtlecolor loadingStatus\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConnectingMessage",{"name":"getStringResource","hash":{},"data":data}))
+    + "</span></div></div>"
+    + container.escapeExpression((helpers.removeStringResourceMnemonic || (depth0 && depth0.removeStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",(depth0 != null ? depth0.OrganizationName : depth0),{"name":"removeStringResourceMnemonic","hash":{},"data":data}))
+    + container.escapeExpression(((helper = (helper = helpers.clearStringNamespace || (depth0 != null ? depth0.clearStringNamespace : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"clearStringNamespace","hash":{},"data":data}) : helper)))
+    + container.escapeExpression((helpers.setStringNamespace || (depth0 && depth0.setStringNamespace) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.OrganizationList",{"name":"setStringNamespace","hash":{},"data":data}))
+    + container.escapeExpression((helpers.addStringResourceMnemonic || (depth0 && depth0.addStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.OrganizationName : stack1),{"name":"addStringResourceMnemonic","hash":{},"data":data}))
+    + "<div id=\"oAuthDescription\" class=\"hidden\"><div class=\"organizationLogos title grid\"><div class=\"row\"><div class=\"col-2 flexParent\"><img class=\"icon centeredImg\" src=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.LogoUrl : stack1), depth0))
+    + "\" alt=\"\" /></div><div class=\"col-9 grid\"><div><h2 class=\"popupTitleWithLogo\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"FHIRLoginTitle",{"name":"getStringResource","hash":{},"data":data}))
+    + "</h2></div><div class=\"section\"><div class=\"popupPretext\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"FHIRLoginPretext",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div></div></div></div></div><div class=\"content buttonDiv\"><div class=\"formsection right formbuttons withSeparator\" id=\"oauthpopupbottombuttons\"><input id=\"connectFHIR\" class=\"button nextstep\" type=\"submit\" value=\""
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.IsUpdate : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConfirmConnectTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /><input id=\"cancelFHIR\" class=\"button\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"PopupGoBackButton",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"GoBackTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /></div></div></div>"
+    + container.escapeExpression((helpers.removeStringResourceMnemonic || (depth0 && depth0.removeStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",(depth0 != null ? depth0.OrganizationName : depth0),{"name":"removeStringResourceMnemonic","hash":{},"data":data}))
+    + container.escapeExpression(((helper = (helper = helpers.clearStringNamespace || (depth0 != null ? depth0.clearStringNamespace : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"clearStringNamespace","hash":{},"data":data}) : helper)))
+    + container.escapeExpression((helpers.setStringNamespace || (depth0 && depth0.setStringNamespace) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.Shared",{"name":"setStringNamespace","hash":{},"data":data}))
+    + container.escapeExpression((helpers.addStringResourceMnemonic || (depth0 && depth0.addStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.OrganizationName : stack1),{"name":"addStringResourceMnemonic","hash":{},"data":data}))
+    + "<div id=\"oAuthUnLink\" class=\"hidden\"><div class=\"organizationLogos title grid\"><div class=\"row\"><div class=\"col-11 column\"><div class=\"sm-only center\"><img class=\"logo\" src=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.LogoUrl : stack1), depth0))
+    + "\" alt=\"\" /></div><div class=\"centerAndFlex\"><div class=\"logo-wrapper lg-only\"><img class=\"logo\" src=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.LogoUrl : stack1), depth0))
+    + "\" alt=\"\" /></div><div><div><div class=\"section\"><div class=\"popupPretext\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"FHIRUnlinkPretext",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div></div></div></div></div></div></div><div id=\"unlinkConfirm\" class=\"content buttonDiv\"><div class=\"formsection right withSeparator\" id=\"oauthpopupbottombuttons\"><input id=\"cancelFHIRAgain\" class=\"button previousstep\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CancelUnlinkingFHIR",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CancelUnlinkTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /><input id=\"unlinkFHIR\" class=\"button cancelworkflow\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConfirmUnlinkButton",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConfirmUnlinkTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /></div></div></div></div><div id=\"challengeQuestions\" class=\"hidden\"><div class=\"organizationLogos title\"><img class=\"icon\" src=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.LogoUrl : stack1), depth0))
+    + "\" alt=\"\" /><h1 class=\"popupTitleWithLogo\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"VerifyAccountTitle",{"name":"getStringResource","hash":{},"data":data}))
+    + "</h1></div><div class=\"section\"><div class=\"content\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"VerifyAccountPretext",{"name":"getStringResource","hash":{},"data":data}))
+    + "</div></div><div class=\"content formsection column_2 grid\"><div class=\"formrow row\"><div  class=\"formcolumn ghostInput challengequestiondiv col-6\"><label for=\"ChallengeQuestion\" id=\"ChallengeQuestionLabel\" >"
+    + ((stack1 = (helpers.ifNotEquals || (depth0 && depth0.ifNotEquals) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.Questions : depth0)) != null ? stack1.length : stack1),1,{"name":"ifNotEquals","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</label><select id=\"ChallengeQuestion\" class=\"wideColumn\">"
+    + ((stack1 = (helpers.ifNotEquals || (depth0 && depth0.ifNotEquals) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.Questions : depth0)) != null ? stack1.length : stack1),1,{"name":"ifNotEquals","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.Questions : depth0),{"name":"each","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</select></div><div class=\"formcolumn  ghostInput answerdiv col-6\"><label for=\"AnswerField\" id=\"AnswerFieldLabel\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Answer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</label><input type=\"text\" id=\"AnswerField\" class=\"wideColumn\" /></div></div></div><div class=\"alert\"><span id=\"alertSpan\" class=\"hidden\" tabindex=\"-1\">"
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"IncorrectAnswer",{"name":"getStringResource","hash":{},"data":data}))
+    + "</span></div><div class=\"content buttonDiv\"><span class=\"hidden\" id=\"OrgIdHiddenSpan\" value=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.Organization : depth0)) != null ? stack1.OrganizationId : stack1), depth0))
+    + "\"></span><div class=\"formsection right formbuttons withSeparator\" id=\"challengequestionpopupbottombuttons\"><div id=\"communityPopupLoading\">"
+    + container.escapeExpression((helpers.ajaxSpinner || (depth0 && depth0.ajaxSpinner) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),1,{"name":"ajaxSpinner","hash":{},"data":data}))
+    + "</div><input id=\"verifyAnswer\" class=\"button nextstep\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"VerifyMyAnswer",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"VerifyMyAnswerTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" disabled=\"\" aria-disabled=\"true\" /><input id=\"notMe\" class=\"button previousstep\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"NotMyAccount",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"NotMyAccountTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /><input id=\"cancelVerify\" class=\"button cancelworkflow\" type=\"submit\" value=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Cancel",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" title=\""
+    + container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"CancelTooltip",{"name":"getStringResource","hash":{},"data":data}))
+    + "\" autocomplete=\"off\" /></div></div></div></div>"
+    + container.escapeExpression((helpers.removeStringResourceMnemonic || (depth0 && depth0.removeStringResourceMnemonic) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"@MYCHART@ORGANIZATIONNAME@",(depth0 != null ? depth0.OrganizationName : depth0),{"name":"removeStringResourceMnemonic","hash":{},"data":data}))
+    + container.escapeExpression(((helper = (helper = helpers.clearStringNamespace || (depth0 != null ? depth0.clearStringNamespace : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"clearStringNamespace","hash":{},"data":data}) : helper)));
+},"1":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConfirmUpdateButton",{"name":"getStringResource","hash":{},"data":data}));
+},"3":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"ConfirmConnectButton",{"name":"getStringResource","hash":{},"data":data}));
+},"5":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression((helpers.getStringResource || (depth0 && depth0.getStringResource) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"SelectOne",{"name":"getStringResource","hash":{},"data":data}));
+},"7":function(container,depth0,helpers,partials,data) {
+    return "<option value=\"empty\"></option>";
+},"9":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<option value=\""
+    + container.escapeExpression(((helper = (helper = helpers.Identifier || (depth0 != null ? depth0.Identifier : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"Identifier","hash":{},"data":data}) : helper)))
+    + "\">"
+    + container.escapeExpression(((helper = (helper = helpers.Question || (depth0 != null ? depth0.Question : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"Question","hash":{},"data":data}) : helper)))
+    + "</option>";
+},"useData":true});})();
