@@ -1,2 +1,0 @@
-/*! Copyright (c) Epic Systems Corporation 2016 */
-$$WPUtil.guaranteeExistence($$WP,"Payments.Components");$$WP.Payments.Components.EditNicknamePopup=function $$WP$Payments$EditNicknamePopup(a){this.Components$TemplateComponent(a)};$$WP.Payments.Components.EditNicknamePopup.prototype={template:$$WP.Templates.Payments.Shared.EditNicknamePopup,setData:function(a){this.Components$TemplateComponent$setData(a)}};$$WP.Payments.Components.EditNicknamePopup.extend("Components.TemplateComponent")
