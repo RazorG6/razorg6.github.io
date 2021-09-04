@@ -1,9 +1,0 @@
-(function() {var template = Handlebars.template, templates = $$WP.Templates = $$WP.Templates || {};templates = templates.Community = templates.Community || {};templates['CommunityLinksView'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers.unless.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.IsProxyContext : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + container.escapeExpression((helpers.addTemplate || (depth0 && depth0.addTemplate) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.ManagePageLinkTab",depth0,{"name":"addTemplate","hash":{},"data":data}));
-},"1":function(container,depth0,helpers,partials,data) {
-    return container.escapeExpression((helpers.addTemplate || (depth0 && depth0.addTemplate) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.ManagePageTabs",depth0,{"name":"addTemplate","hash":{},"data":data}))
-    + container.escapeExpression((helpers.addTemplate || (depth0 && depth0.addTemplate) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Community.ManagePageDiscoverTab",depth0,{"name":"addTemplate","hash":{},"data":data}));
-},"useData":true});})();

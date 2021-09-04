@@ -1,9 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	MyChart_Session	cht2jsjamyplumsu2xaijx1n
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	__RequestVerificationToken_L015Q2hhcnQ1	x3iR1-pdX98tpDnaJy7JRLjgZSai7xGChRPT3cjUVA4VWu2UcF6suO98y1J9oV9qed-jeOaYezc-9-Sn7bcPr13hOyA1
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	ASPSESSIONIDAUQAASAT	ILHDODIAFDIGOMNMHFAOHNNC
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	MyChartLocale	en-US
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	MYCPERS	3372271626.47873.0000
-mychart.orlandohealth.com	TRUE	/	FALSE	1999999999	SameSite	none
-
