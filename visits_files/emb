@@ -1,0 +1,131 @@
+new function(){function requestDataPage(subdomain, appKey, isDotNet, userQuery)
+{
+	this.appKey = appKey;
+	this.isDotNet = isDotNet;
+	this.subdomain = subdomain;
+	this.userQuery = userQuery;
+
+	this.start = function () {
+		var scriptNodes = document.getElementsByTagName("script");
+		var targetScript;
+		var lookingEmbSrc = "/dp/" + this.appKey.toLowerCase() + "/emb";
+		var lookingNetSrc = "/dp/" + this.appKey.toLowerCase() + "/net";
+		for (var i = 0; i < scriptNodes.length; i++) {
+			if (!scriptNodes[i].src) continue;
+			if (scriptNodes[i].src.toLowerCase().indexOf(lookingEmbSrc) !== -1 || scriptNodes[i].src.toLowerCase().indexOf(lookingNetSrc) !== -1) {
+				targetScript = scriptNodes[i];
+				break;
+			}
+		}
+		
+		if (!targetScript) return;
+
+		var v_dpAnchorId = 'dp_anchor_id_' + Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000;;
+		this.targetNode = document.createElement('div');
+		this.targetNode.id = v_dpAnchorId;
+		targetScript.parentElement.insertBefore(this.targetNode, targetScript.nextSibling);
+
+		this.hideOldBranding(this.appKey);
+
+		document.addEventListener('DOMContentLoaded', function () {
+			this.deleteCXKG();
+			this.deleteOldBranding(this.appKey);
+		}.bind(this));
+
+		this.cbloadInternal();
+	};
+
+	function inIframe() {
+		try {
+			return window.self !== window.top;
+		} catch (e) {
+			return true;
+		}
+	}
+
+	this.cbloadInternal = function () {
+		//if (this.targetNode.parentNode.nodeName.toLowerCase() === 'head') {
+		//	//crutch when deploy to a blank page
+		//	document.getElementsByTagName('body')[0].appendChild(this.targetNode);
+		//}
+		var v_base64 = {
+			_keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+			encode: function (e) { var t = ""; var n, r, i, s, o, u, a; var f = 0; e = v_base64._utf8_encode(e); while (f < e.length) { n = e.charCodeAt(f++); r = e.charCodeAt(f++); i = e.charCodeAt(f++); s = n >> 2; o = (n & 3) << 4 | r >> 4; u = (r & 15) << 2 | i >> 6; a = i & 63; if (isNaN(r)) { u = a = 64 } else if (isNaN(i)) { a = 64 } t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr.charAt(a) } return t },
+			_utf8_encode: function (e) { e = e.replace(/\r\n/g, "\n"); var t = ""; for (var n = 0; n < e.length; n++) { var r = e.charCodeAt(n); if (r < 128) { t += String.fromCharCode(r) } else if (r > 127 && r < 2048) { t += String.fromCharCode(r >> 6 | 192); t += String.fromCharCode(r & 63 | 128) } else { t += String.fromCharCode(r >> 12 | 224); t += String.fromCharCode(r >> 6 & 63 | 128); t += String.fromCharCode(r & 63 | 128) } } return t }
+		};
+
+		if (((window.location.pathname + window.location.search).search(/(DP[.]ASP[?]APPKEY[=])|(DP[.]ASP[?]APPSESSION[=])/i) !== -1) && !inIframe()) {
+			this.targetNode.innerHTML = '<br/><strong>Error - Cannot display DataPage due to multiple embedded deployments.</strong></br>';
+		} else {
+
+			var params = [];
+			params.push("AppKey=" + this.appKey);
+			params.push("js=true");
+			params.push("cbEmbDeployWith=new_async_embedjs");
+			if (this.isDotNet) params.push('dotnet=true');
+			params.push("cbDatapageAnchorId=" + this.targetNode.id);
+			params.push("pathname=" + window.location.protocol + "//" + window.location.host + window.location.pathname);
+			params.push("cbScreenWidth=" + window.innerWidth);
+			params.push("cbEmbQueryStr=" + this.urlEncode(window.location.search.substring(1)));
+			var v_cbParamList = '';
+			try {
+				if (typeof localStorage != 'undefined') {
+					v_cbParamList = localStorage.getItem("cbParamList") || '';
+				}
+			}
+			catch (ex) { /**/ }
+			params.push("cbParamList=" + v_cbParamList);
+			if (this.userQuery) params.push(this.userQuery);
+
+			var v_query = "cbqe=" + v_base64.encode(params.join("&")) + "&cbEmbedTimeStamp=" + new Date().valueOf();
+
+			var v_script = document.createElement("script");
+			v_script.type = "text/javascript";
+			v_script.src = 'https://' + this.subdomain + '/dp/' + this.appKey + '?' + v_query;
+			v_script.onreadystatechange = v_script.onload = function () { try { v_script.parentNode.removeChild(v_script); } catch (v_e) { /**/ } };
+
+			document.head.appendChild(v_script);
+		}
+
+	};
+
+	this.deleteOldBranding = function (appKey) {
+		try {
+			var element = document.getElementById('cb' + appKey);
+			if (element) element.parentNode.removeChild(element);
+		} catch (ex) { }
+	}
+
+	this.deleteCXKG = function () {
+		try {
+			var element = document.querySelector('#cxkg, .cxkg');
+			if (element) element.parentNode.removeChild(element);
+		} catch (ex) { }
+	};
+
+	this.hideOldBranding = function (appKey) {
+		try {
+			var selector = '#cxkg, .cxkg, #cb' + appKey;
+			var v_styleData = '\n\x3c!--\n ' + selector + ' {display:none; position:relative; }\n--\x3e\n';
+			var v_style = document.createElement("style");
+			v_style.type = 'text/css';
+			if (v_style.styleSheet) {
+				v_style.styleSheet.cssText = v_styleData;
+			} else {
+				v_style.appendChild(document.createTextNode(v_styleData));
+			}
+			document.head.appendChild(v_style);
+		} catch (ex) { }
+	};
+
+	this.urlEncode = function (v_str) {
+		return v_str.replace(/%/g, "%25")
+			.replace(/ /g, "%20")
+			.replace(/\t/g, "%09")
+			.replace(/\+/g, "%2B")
+			.replace(/\n/g, "%0A")
+			.replace(/&/g, "%26")
+			.replace(/#/g, "%23");
+	};
+
+};new requestDataPage('c1eib354.caspio.com', '48354000939aeb6a1de3408ebe49', false, '').start();;}
