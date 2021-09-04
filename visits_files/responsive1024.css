@@ -1,0 +1,559 @@
+/* forms start */
+
+#caspioform > div {
+	display: block !important;
+}
+
+#caspioform > div > div > div[id^="GridCtnr"] {
+	overflow: auto;
+}
+
+section[class^="cbFormSection"] {
+	display: block;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+	section[class^="cbFormSection"] input[type=text],
+	section[class^="cbFormSection"] input[type=email],
+	section[class^="cbFormSection"] input[type=password],
+	section[class^="cbFormSection"] input[type=file],
+	section[class^="cbFormSection"] input[type=button],
+	section[class^="cbFormSection"] select,
+	section[class^="cbFormSection"] textarea {
+		width: 100% !important;
+	}
+
+	section[class^="cbFormSection"] div.cbComboBoxContainer {
+		display: block !important;
+		width: 100% !important;
+	}
+
+	section[class^="cbFormSection"] div.cbComboBoxContainer div {
+		display: block !important;
+		width: auto !important;
+	}
+
+	section[class^="cbFormSection"] div.cbComboBoxContainer div[id^="CoverDiv"] {
+		width: 100% !important;
+	}
+	
+	section[class^="cbFormSection"] input[type=file] {
+		box-sizing: border-box;
+	}
+	section[class^="cbFormSection"] input[type=submit],
+	section[class^="cbFormSection"] input[type=submit]:hover
+	{
+		margin-top: 5px;
+	}
+
+	section[class^="cbFormSection"] > div {
+		display: block;
+	}
+
+	section[class^="cbFormSection"] > div > div[data-cb-name=ta-wrapper] {
+		display: block !important;
+	}
+
+	section[class^="cbFormSection"] > div:empty {
+		display: none;
+	}
+
+	section[class^="cbFormSection"] span[data-cb-name=cbFormDataCheckbox],
+	section[class^="cbFormSection"] span[data-cb-name=cbFormDataRadios] {
+		display: grid;
+		grid-template-columns: 24px 1fr;
+		align-items: center;
+	}
+
+		section[class^="cbFormSection"] span[data-cb-name=cbFormDataCheckbox] input[type=checkbox],
+		section[class^="cbFormSection"] span[data-cb-name=cbFormDataRadios] input[type=radio] {
+			grid-column: 1;
+		}
+
+		section[class^="cbFormSection"] span[data-cb-name=cbFormDataCheckbox] label,
+		section[class^="cbFormSection"] span[data-cb-name=cbFormDataRadios] label {
+			grid-column: 2;
+			margin-right: 0px;
+			line-height: 32px;
+			min-height: 32px;
+			white-space: normal;
+		}
+
+		section[class^="cbFormSection"] span[data-cb-name=cbFormDataRadios] br {
+			display: none;
+		}
+
+	section[class^="cbFormSection"] input[type=file] + span[class^="cbFormData"] {
+		display: block;
+	}
+
+	section[class^="cbFormSection"] a.cbFormAudioCaptcha > img {
+		position: relative;
+		left: -28px;
+		top: 6px;
+	}
+
+select.cbFormNavigationDDown {
+	background-color: unset; /**disable chrome default user agent background-color property for select*/
+}
+
+/* forms end */
+
+
+select.cbResultSetNavigationDDown {
+	background-color: unset; /**disable chrome default user agent background-color property for select*/
+}
+
+/*tabular start*/
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+	/** {
+		color: blue !important;
+	}*/
+
+	section[class^="cbFormSection"],
+	section.cbCalendarReport,
+	nav.cbCalendarNavBarPanel,
+	.cbAuthSimpleOuterTable,
+	.cbAuthSidebarOuterTable {
+		margin-left: 15% !important;
+		width: 70% !important;
+		margin-right: 15% !important;
+		box-sizing: border-box;
+	}
+
+	section[class^="cbFormSection"] .cbFormFieldCell img,
+	section[class^="cbFormSection"] .cbBulkFormFieldCell img,
+	section[class^="cbFormSection"] .cbFormDataCell img,
+	table[class^="cbResultSetTable"] .cbResultSetData  img,
+	section.cbColumnarReport .cbResultSetData  img,
+	section.cbCalendarReport .cbResultSetData img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.cbAuthSimpleOuterTable section[class^="cbFormSection"]
+	{
+		margin-left: unset !important;
+		width: unset !important;
+		margin-right: unset !important;
+	}
+
+	.cbAuthSimpleOuterTable .cbAuthSimpleCaspioContainer {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.cbAuthSimpleOuterTable section[class^="cbFormSection"] input[type=submit],
+	.cbAuthSimpleOuterTable section[class^="cbFormSection"] input[type=submit]:hover /* :hover - in case of FF */ {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	div[id^="cbOuterAjaxCtnr"] .cbAuthIconsOuterTable {
+		margin-left: 15%;
+		margin-right: 15%;
+		text-align: center;
+	}
+
+	.cbAuthSidebarOuterTable section[class^="cbFormSection"] {
+		margin-left: unset !important;
+		width: unset !important;
+		margin-right: unset !important;
+	}
+
+	.cbAuthSidebarOuterTable .cbAuthSidebarProviderContentWrapper {
+		width: 100%;
+	}
+
+	.cbAuthSidebarOuterTable .cbAuthSidebarLoginButtonContainer {
+		text-align: center;
+	}
+
+	.cbAuthSidebarOuterTable .cbAuthOpenIDTable .cbFormTextField {
+		width: 100%;
+	}
+
+	div[id^="cbOuterAjaxCtnr"] .cbFormCommonError {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	section.cbCalendarReport {
+		display: block;
+		overflow: hidden;
+	}
+
+	section.cbCalendarReport > div[class^="cbResultSetCalendarHeaderCell"] {
+		display: none !important;
+	}
+
+	/* inline actions start */
+	table[class^="cbResultSetTable"] > tbody > tr[data-cb-name="data"]:not([class~=Edit]) > td.cbResultSetActionCell {
+		background-image: url(/images/rmenu.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	table[class^="cbResultSetTable"] > tbody > tr[data-cb-name="data"]:not([class~=Edit]) > td > div.RAAnchor {
+		position: relative;
+		display: inline-block;
+		width: 42px;
+		border: 1px solid red;
+	}
+
+	.cbColumnarReport div[data-cb-name=DelCtnr] {
+		height: 42px;
+		padding: 0px;
+		display: flex;
+		align-items: center;
+	}
+
+		.cbColumnarReport div[data-cb-name=DelCtnr] > input {
+			margin-left: 15px;
+		}
+
+	.cbColumnarReport div[data-cb-name=RACtnr] > a,
+	section.cbCalendarReport div[data-cb-name=RACtnr] > a,
+	table[class^="cbResultSetTable"] > tbody > tr[data-cb-name="data"] > td.cbResultSetActionCell > a,
+	table[class^="cbResultSetTable"] > tbody > tr[data-cb-name="data"] > td.cbResultSetActionCell > span {
+		display: none;
+	}
+
+	section.cbColumnarReport > div > div,
+	section.cbCalendarReport > div > div {
+		position: relative;
+	}
+
+	section.cbCalendarReport div[data-cb-name=RACtnr],
+	.cbColumnarReport div[data-cb-name=RACtnr] {
+		position: absolute !important;
+		display: block !important;
+		top: 0px !important;
+		right: 0px !important;
+		width: 42px !important;
+		height: 42px !important;
+		margin: 0px !important;
+		padding: 0px !important;
+		background-color: transparent !important;
+		background-image: url(/images/rmenu.svg) !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		overflow: visible !important;
+	}
+
+	/* inline actions end*/
+
+	a.cbResultSetCalendarNavigationLinks {
+		font-size: 17px !important;
+		display: inline-block;
+		min-width: 24px;
+		height: 24px;
+	}
+
+	nav.cbResultSetCalendarStickyHeader {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	
+	.cbCalendarNavBarPanel > ul > li[data-cb-name='First'],
+	.cbCalendarNavBarPanel > ul > li[data-cb-name='Last'] {
+		display: none;
+	}
+
+	.cbCalendarNavBarPanel ul li[data-cb-name='Prev'] {
+		margin-right: auto;
+	}
+	.cbCalendarNavBarPanel ul li[data-cb-name='Next'] {
+		margin-left: auto;
+	}
+
+	/* inline actions end*/
+
+	nav.cbResultSetActionPanelStickyHeader {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.5);
+	}
+	
+	/* adjust navigation panels for tablet */
+	nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='SimpleNavBar'],
+	nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] {
+		display: inline-flex;
+	}
+
+	nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='JumpToNavBar'],
+	nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] {
+		display: none;
+	}
+
+	nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='SimpleNavBar'] > li {
+		margin: 0.5em;
+	}
+}
+
+#inlineActions.ToolBox .Body {
+	display: table;
+}
+
+#inlineActions.ToolBox .RAItem {
+	height: 42px;
+	line-height: 42px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: block;
+}
+
+#inlineActions.ToolBox .RAItem span {
+	white-space: nowrap;
+}
+
+.ToolBox .RAItem a + a {
+	margin-left: 10px;
+}
+
+/*tabular end*/
+
+
+
+/* list/gallery view start */
+section.cbColumnarReport {
+	display: block;
+	overflow: hidden;
+}
+
+	section.cbColumnarReport > div {
+		margin-bottom: 10px;
+	}
+
+	section.cbColumnarReport dd + dt::before { /* drop keep with next */
+		content: "\A";
+		white-space: pre-line;
+	}
+/* list/gallery view end */
+
+
+
+
+/*US #77884 start*/
+/*nav.cbActionPanel ul > li,
+nav.cbReportNavBarPanel ul > li {
+	display: flex;
+}*/
+
+nav.cbActionPanel ul > li > span {
+	display: none;
+}
+nav.cbActionPanel ul > li > a {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin: 0px;
+}
+nav.cbActionPanel ul > li > a:first-child {
+	padding: 0px 2px 0px 0.5em;
+}
+nav.cbActionPanel ul > li > a:last-child {
+	padding: 0px 0.5em 0px 2px;
+}
+
+nav.cbReportNavBarPanel {
+	width: 100% !important;
+}  
+
+nav.cbReportNavBarPanel .cbNavBarCtnt  {
+    justify-content: center !important;
+}
+
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div {
+	position: relative;
+	width: 110px;
+	height: 42px;
+	line-height: 42px;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div select,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div select {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+	display: block;
+	top: 0px;
+	bottom: 0px;
+	height: 42px;
+	line-height: 42px;
+	width: 100%;
+	padding-right: 70%;
+	text-align: right;
+	text-align-last: right;
+	margin: 0px !important;
+	opacity: 0;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div label,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div label {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	display: block;
+	margin: 0px !important;
+	line-height: 42px;
+	pointer-events: none;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelOf'],
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div label[data-cb-name='LabelOf'] {
+	text-align: center;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelTotal'],
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div label[data-cb-name='LabelTotal'] {
+	padding-left: 70%;
+	text-align: left;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelNumber'],
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] div label[data-cb-name='LabelNumber'] {
+	padding-right: 70%;
+	text-align: right;
+}
+
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] a,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] a,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveJumpToNavBar'] span,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] a,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] a,
+nav.cbReportNavBarPanel .cbNavBarCtnt ul[data-cb-name='ResponsiveNavBar'] span {
+	display: inline-block;
+	min-width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav.cbFormNavBarPanel {
+	text-align: center;
+}
+
+nav.cbFormNavBarPanel ul[data-cb-name='ResponsiveNavBar'] {
+	display: inline-flex;
+}
+
+nav.cbFormNavBarPanel ul[data-cb-name='DesktopNavBar'] {
+	display: none;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div {
+	position: relative;
+	width: 110px;
+	height: 42px;
+	line-height: 42px;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div select {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+	display: block;
+	top: 0px;
+	bottom: 0px;
+	height: 42px;
+	line-height: 42px;
+	width: 100%;
+	padding-right: 70%;
+	text-align: right;
+	text-align-last: right;
+	margin: 0px !important;
+	opacity: 0;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div label {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: block;
+	left: 0px;
+	margin: 0px !important;
+	line-height: 42px;
+	pointer-events: none;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelOf'] {
+	text-align: center;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelTotal'] {
+	padding-left: 70%;
+	text-align: left;
+}
+
+nav.cbFormNavBarPanel [data-cb-name='ResponsiveNavBar'] div label[data-cb-name='LabelNumber'] {
+	padding-right: 70%;
+	text-align: right;
+}
+
+nav.cbFormNavBarPanel ul[data-cb-name='ResponsiveNavBar'] a,
+nav.cbFormNavBarPanel ul[data-cb-name='ResponsiveNavBar'] a,
+nav.cbFormNavBarPanel ul[data-cb-name='ResponsiveNavBar'] span {
+	display: inline-block;
+	min-width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+section[class^="cbFormSection"] div.StripeElement {
+	width: 100% !important;
+}
+/*US #77884 end*/
+
+/* remove appearance  for inputs */
+#caspioform input[type="text"],
+#caspioform input[type="submit"],
+#caspioform input[type="password"],
+#caspioform input[type="email"],
+#caspioform input[type="button"],
+table[class^="cbResultSetTable"] input[type="text"],
+table[class^="cbResultSetTable"] input[type="submit"],
+table[class^="cbResultSetTable"] input[type="password"],
+table[class^="cbResultSetTable"] input[type="email"],
+table[class^="cbResultSetTable"] input[type="button"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.cbLoginButtonContainer input[type="submit"],
+.cbAuthSidebarLoginButtonContainer input[type="button"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+/* hide calendar arrows */
+.flatpickr-calendar .numInputWrapper span.arrowUp,
+.flatpickr-calendar .numInputWrapper span.arrowDown {
+	opacity: 0;
+	pointer-events: none;
+}
