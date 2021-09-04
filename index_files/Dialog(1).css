@@ -1,0 +1,762 @@
+﻿
+.cbUIHolder, .cbUIHolder img {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+	.cbUIHolder.Top {
+		background-color: #fff;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+
+.Dialog, .Window, #Alert {
+	position: fixed;
+	background-color: #fff;
+	border: 1px solid #3186ad;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	overflow: visible;
+	font-family: Arial, sans-serif;
+}
+
+	.Dialog .Title { /*, #Alert .Title {*/
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		right: 0px;
+		height: 40px;
+		cursor: move;
+		overflow: hidden;
+		background-color: #FAFAFA;
+		border-bottom: 1px solid #dddddd;
+	}
+
+	.Dialog .TitleText, #Alert .TitleText {
+		position: absolute;
+		left: 15px;
+		top: 0px;
+		right: 46px;
+		height: 40px;
+		line-height: 40px;
+		cursor: move;
+		overflow: hidden;
+		white-space: pre;
+	}
+
+	.Dialog .TitleText {
+		font-size: 13px;
+		color: #3D82AB;
+	}
+
+	#Alert .TitleText {
+		font-size: 14px;
+		font-weight: bold;
+		color: #222;
+	}
+
+	.Dialog .ClsBtnCtnr, #Alert .ClsBtnCtnr {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 31px;
+		height: 31px;
+		cursor: pointer;
+	}
+
+	.Dialog .ClsBtn, #Alert .ClsBtn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 11px;
+		height: 11px;
+		border: initial;
+		padding: initial;
+	}
+
+	.Window .ClsBtnCtnr {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 21px;
+		height: 27px;
+		cursor: pointer;
+	}
+
+	.Window .ClsBtn {
+		position: absolute;
+		top: 8px;
+		right: 7px;
+		width: 11px;
+		height: 11px;
+	}
+
+	.Dialog .Body, #Alert .Body {
+		position: absolute;
+		top: 41px;
+		left: 0px;
+		right: 0px;
+		bottom: 55px;
+		overflow: hidden;
+	}
+
+		.Dialog .Body input[type="radio"] {
+			padding: 0px;
+			margin: 0px 3px 0px 0px;
+			vertical-align: -1px;
+		}
+
+	.Dialog .ButtonsCtnr, #Alert .ButtonsCtnr {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 55px;
+		text-align: right;
+		border-top: 1px solid #DDD;
+		background-color: #F5F5F5;
+		white-space: nowrap;
+	}
+
+	/*window related classes*/
+
+	.Window .Title {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		right: 0px;
+		cursor: move;
+		height: 27px;
+		background-color: #174478;
+	}
+
+	.Window .TitleText {
+		position: absolute;
+		left: 7px;
+		top: 0px;
+		right: 45px;
+		height: 27px;
+		line-height: 27px;
+		color: #fff;
+		overflow: hidden;
+	}
+
+	.Window .Title.Inactive {
+		background-color: #767676;
+	}
+
+.cbMinWindowBtnCtnr {
+	/*TODO*/
+	position: absolute;
+	right: 21px;
+	top: 0px;
+	width: 21px;
+	height: 27px;
+	cursor: pointer;
+}
+
+.cbClsWindowBtnCtnr {
+	/*TODO*/
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 23px;
+	height: 27px;
+	cursor: default;
+}
+
+.cbClsWindowBtn {
+	/*TODO*/
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 11px;
+	height: 11px;
+}
+
+.cbMinWindowBtn {
+	/*TODO*/
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	width: 11px;
+	height: 11px;
+}
+
+.cbWindowResize {
+	/*TODO*/
+	position: absolute;
+	right: -3px;
+	bottom: -3px;
+	width: 13px;
+	height: 13px;
+	cursor: nw-resize;
+	background-image: url(/ui/images/windowresize.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.Window .Body {
+	position: absolute;
+	top: 35px;
+	left: 8px;
+	right: 8px;
+	bottom: 8px;
+	overflow: hidden;
+}
+
+/*toolbox related classes*/
+.cke_reset_all .ToolBox,
+.ToolBox, .ActionToolBox {
+	position: absolute;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	cursor: default;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+}
+
+	.ToolBox .Body {
+		padding: 0 0;
+		overflow: hidden;
+	}
+
+	.ToolBox .Item {
+		padding: 0 12px;
+		height: 24px;
+		line-height: 24px;
+		color: #333;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		cursor: pointer;
+	}
+
+		.ToolBox .Item:first-child,
+		.ListData .Item:first-child {
+			margin-top: 2px;
+		}
+
+		.ToolBox .Item:last-child,
+		.ListData .Item:last-child {
+			margin-bottom: 2px;
+		}
+
+	.ToolBox .GroupTitle {
+		padding: 0 12px;
+		height: 24px;
+		line-height: 24px;
+		color: #333;
+		white-space: nowrap;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.ToolBox .Item a {
+		color: #333;
+		cursor: pointer;
+		display: inline-block;
+		height: 24px;
+		line-height: 24px;
+		width: 100%;
+	}
+
+	.ToolBox .Item.Hover, .ToolBox .Item.Hover a, .ToolBox .Item.Hover, .ToolBox .Item.Hover a ,
+	.ListData .Item.Hover, .ListData .Item.Hover a, .ListData .Item.Hover, .ListData .Item.Hover a {
+		color: #ffffff;
+		background: #6d8199;
+	}
+
+
+
+	.ActionToolBox .Title {
+		height: 20px;
+		line-height: 20px;
+		margin: 10px 10px 0 10px;
+	}
+
+	.ActionToolBox .Body {
+		margin: 0 10px;
+	}
+
+	.ActionToolBox .ButtonsCtnr {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 28px;
+		line-height: 28px;
+		background-color: #FAFAFA;
+		border-top: 1px solid #EAEAEA;
+		text-align: right;
+		padding-right: 12px;
+	}
+
+		.ActionToolBox .ButtonsCtnr a {
+			margin-left: 8px;
+		}
+
+
+
+#Alert .Icon {
+	position: absolute;
+	left: 25px;
+	top: 0px;
+}
+
+#Alert .Message {
+	position: absolute;
+	left: 70px;
+	top: 2px;
+	right: 15px;
+	text-align: left;
+	overflow: hidden;
+	font-size: 14px;
+	cursor: default;
+}
+
+	#Alert .Message .LongParam {
+		word-wrap: break-word;
+		font-weight: bold;
+	}
+
+#Alert .Details {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	cursor: default;
+	background-color: #F5F5F5;
+}
+
+#Alert .DetailsContent {
+	overflow: auto;
+	line-height: 14px;
+	top: 0px;
+	bottom: 10px;
+	left: 25px;
+	right: 15px;
+	position: absolute;
+}
+
+	#Alert .DetailsContent ul {
+		margin-left: 0px;
+		margin-top: 0px;
+		padding-left: 17px;
+	}
+
+	#Alert .DetailsContent li {
+		list-style-type: square;
+	}
+
+	#Alert .DetailsContent > div > div {
+		margin-left: 15px;
+		margin-top: 5px;
+	}
+
+		#Alert .DetailsContent > div > div.DetailsGroupCaption {
+			color: #3d82ab;
+			margin: 0px 0px 5px 0px;
+		}
+
+	#Alert .DetailsContent textarea {
+		background-color: #F5F5F5;
+		border: none;
+		border-width: 0px;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+#Alert .DetailsLink {
+	position: absolute;
+	display: inline-block;
+	left: 25px;
+	top: 0px;
+	bottom: 0px;
+	line-height: 55px;
+	color: #265588;
+	padding-right: 13px;
+	font-weight: bold;
+}
+
+
+.SimpleButton,
+.Dialog .ButtonsCtnr input.SimpleButton, 
+#Alert .ButtonsCtnr input.SimpleButton {
+	padding: 0px 10px;
+	cursor: pointer;
+	margin: 0px;
+	min-width: 78px;
+	font-family: Arial, Sans-Serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 30px;
+	text-align: center;
+	height: 28px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	color: #444;
+	-webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	border: 1px solid #cacaca;
+	border-color: #cecece #cecece #b9b9b9 #bfbfbf;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	background-color: #e5e5e5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#e5e5e5));
+	background: -moz-linear-gradient(top, #fcfcfc, #e5e5e5);
+	background: -ms-linear-gradient(top, #fcfcfc, #e5e5e5);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e5e5e5', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	text-transform: none;
+}
+
+
+	.SimpleButton:hover,
+	.Dialog .ButtonsCtnr input.SimpleButton:hover, 
+	#Alert .ButtonsCtnr input.SimpleButton:hover {
+		color: #444444;
+		background-color: #d3d3d3;
+		border: 1px solid #bebebe;
+		border-bottom: 1px solid #b0b0b0;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d3d3d3)); /* for webkit browsers */
+		background: -moz-linear-gradient(top, #f2f2f2, #d3d3d3); /* for firefox 3.6+ */
+		background: -ms-linear-gradient(top, #f2f2f2, #d3d3d3);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#d3d3d3', GradientType=0);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+	.SimpleButton[disabled], .SimpleButton[disabled]:hover, 
+	.Dialog .ButtonsCtnr input.SimpleButton[disabled], .Dialog .ButtonsCtnr input.SimpleButton[disabled]:hover,
+	#Alert .ButtonsCtnr input.SimpleButton[disabled], #Alert .ButtonsCtnr input.SimpleButton[disabled]:hover,
+	.ActionButton[disabled], .ActionButton[disabled]:hover,
+	.Dialog .ButtonsCtnr input.ActionButton[disabled], .Dialog .ButtonsCtnr input.ActionButton[disabled]:hover,
+	#Alert .ButtonsCtnr input.ActionButton[disabled], #Alert .ButtonsCtnr input.ActionButton[disabled]:hover {
+		-webkit-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+		color: #d4d4d4;
+		background-color: #f2f2f2;
+		border-width: 1px;
+		border-style: solid;
+		cursor: default;
+		border-color: #e0e0e0 #e0e0e0 #d4d4d4 #d7d7d7;
+		background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eeeeee));
+		background: -moz-linear-gradient(top, #fdfdfd, #eeeeee);
+		background: -ms-linear-gradient(top, #fdfdfd, #eeeeee);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#eeeeee',GradientType=0 );
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.05);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+
+.ActionButton, 
+.Dialog .ButtonsCtnr input.ActionButton,
+#Alert .ButtonsCtnr input.ActionButton {
+	-webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #3380a4 #3586ab #266582 #3586ab;
+	border-radius: 1px;
+	background-color: #3186ad;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6aa8c9), to(#3186ad));
+	background: -moz-linear-gradient(top, #6aa8c9, #3186ad);
+	background: -ms-linear-gradient(top, #6aa8c9, #3186ad);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6aa8c9', endColorstr='#3186ad', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ToolBox .ButtonsCtnr .SimpleButton:not(.ActionButton)
+{
+	background-color: white;
+	border: none;
+	text-decoration:underline;
+	background:none;
+	box-shadow:none;
+}
+.ToolBox .ButtonsCtnr .ActionButton
+{
+	background-color: none;
+	border: none;
+	text-decoration:none;
+}
+
+	.ActionButton:hover, 
+	.Dialog .ButtonsCtnr input.ActionButton:hover,
+	#Alert .ButtonsCtnr input.ActionButton:hover {
+		color: #fff;
+		border: 1px solid #4a7e9a;
+		border-color: #26608d #286896 #1c4c63 #286896;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		background-color: #256998;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4f91bb), to(#256998));
+		background: -moz-linear-gradient(top, #4f91bb, #256998);
+		background: -ms-linear-gradient(top, #4f91bb, #256998);
+		filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4f91bb', endColorstr='#256998', GradientType=0);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+
+.SimpleButton:focus, 
+.Dialog .ButtonsCtnr input.SimpleButton:focus,
+#Alert .ButtonsCtnr input.SimpleButton:focus {
+	border: 1px solid #aaaaaa;
+	box-shadow: 0 0px 4px #3d82ab;
+	-webkit-box-shadow: 0 0px 4px rgba(61, 130, 171, 0.6);
+	-moz-box-shadow: 0 0px 4px rgba(61, 130, 171, 0.6);
+	box-shadow: 0 0px 4px rgba(61, 130, 171, 0.6);
+}
+
+.ActionButton:focus,
+.Dialog .ButtonsCtnr input.ActionButton:focus, 
+#Alert .ButtonsCtnr input.ActionButton:focus {
+	border: 1px solid #476ea5;
+	border-color: #476ea5 #476ea5 #3b5b87 #476ea5;
+	box-shadow: 0 0px 4px #3d82ab;
+	-webkit-box-shadow: 0 0px 4px rgba(61, 130, 171, 1.0);
+	-moz-box-shadow: 0 0px 4px rgba(61, 130, 171, 1.0);
+	box-shadow: 0 0px 4px rgba(61, 130, 171, 1.0);
+}
+
+		.Dialog .ButtonsCtnr input.ActionButton.SimpleButton, 
+		#Alert .ButtonsCtnr input.ActionButton.SimpleButton {
+			margin-right: 12px;
+			margin-top: 12px;
+		}
+
+		.Dialog .ButtonsCtnr input.SimpleButton, 
+		#Alert .ButtonsCtnr input.SimpleButton {
+			margin-top: 12px;
+			margin-right: 8px;
+		}
+
+
+
+.SmallButton {
+	min-width: 10px !important;
+	padding: 0px;
+	height: 22px;
+	width: 62px;
+	line-height: 22px !important;
+}
+
+.ButtonBackground {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cecece #cecece #b9b9b9 #bfbfbf;
+	background-color: #e5e5e5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#e5e5e5));
+	background: -moz-linear-gradient(top, #fcfcfc, #e5e5e5);
+	background: -ms-linear-gradient(top, #fcfcfc, #e5e5e5);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e5e5e5', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+	.ButtonBackground:hover {
+		border-color: #bebebe #bebebe #b0b0b0 #bebebe;
+		background-color: #d3d3d3;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d3d3d3));
+		background: -moz-linear-gradient(top, #f2f2f2, #d3d3d3);
+		background: -ms-linear-gradient(top, #f2f2f2, #d3d3d3);
+		filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#d3d3d3', GradientType=0);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+#SelectFieldsDlg .Body {
+	margin: 10px;
+}
+
+	#SelectFieldsDlg .Body .SelectFieldsTitle {
+		margin: 3px 0px;
+		font-weight: bold;
+	}
+
+
+.DropBox {
+	position: absolute;
+	max-height: 304px;
+	border: 1px solid #ccc;
+	overflow-x: hidden;
+	z-index: 1;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+	.DropBox .Ctnr {
+		position: relative;
+	}
+
+	.DropBox .Body {
+		display: table;
+		width: 100%;
+	}
+
+	.DropBox .OptGroup {
+		height: 20px;
+		line-height: 20px;
+		font-weight: bold;
+		padding-left: 3px;
+		cursor: default;
+	}
+
+	.DropBox .Option {
+		height: 20px;
+		line-height: 20px;
+		padding-left: 3px;
+		cursor: pointer;
+		white-space: pre;
+	}
+
+		.DropBox .Option.InGroup {
+			padding-left: 10px;
+		}
+
+		.DropBox .Option.Selected {
+			color: #ffffff;
+			background-color: #6d8199;
+		}
+
+		.DropBox .Option:first-child {
+			margin-top: 2px;
+		}
+
+		.DropBox .Option:last-child {
+			margin-bottom: 2px;
+		}
+
+.ListBox {
+		position: relative;
+}
+	.ListData.ListBox {
+			padding: 0px;
+		}
+	.ListData.SelectBox {
+		position: absolute;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		cursor: default;
+		padding: 0px;
+	}
+	.ListData .Item {
+		padding: 0 12px;
+		height: 24px;
+		line-height: 24px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.ListData .cbWindowResize{
+		cursor: nw-resize;
+	}
+	.ListData .SelectAllCheckbox {
+		border-top: 1px solid #aaa;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+		.ListData .SelectAllCheckbox > input {
+			margin-left: 0px;
+			margin-right: 6px;
+		}
+	.ListData .ButtonsCtnr {
+		height: 16px;
+		text-align: right;
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 20px;
+	}
+	.ListData .Body {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		outline: none;
+		overflow-x: hidden;
+	}
+		.ListData.ListBox .Body{
+			overflow-y: auto;
+		}
+		.ListData .ButtonsCtnr .Button {
+			text-decoration:none;
+			padding: 0px 7px;
+		}
+
+.AutoCompleteList {
+	background: rgb(255, 255, 255);
+	border-color: rgb(221,221,221);
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+	padding: 2px 0px;
+}
+
+.AutoCompleteOption {
+	padding: 5px 8px;
+	background-color: rgb(255, 255, 255);
+}
+
+.AutoCompleteOption_hover {
+	padding: 5px 8px;
+	background-color: rgb(242, 242, 242);
+	cursor: pointer;
+}
+
+.AutoCompleteOptionText {
+	color: rgb(51,51,51);
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+}
+
+.AutoCompleteOptionText_hover {
+	color: rgb(51,51,51);
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+}
+
+
+.AutoCompleteOptionRemainder {
+	color: rgb(51,51,51);
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.AutoCompleteOptionRemainder_hover {
+	color: rgb(51,51,51);
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
